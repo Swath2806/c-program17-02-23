@@ -1,0 +1,57 @@
+#include<stdio.h>
+
+int main()
+
+{
+
+int i,n,k,es,os;
+
+es=0;
+
+os=0;
+
+printf("enter n value");
+
+scanf("%d",&n);
+
+printf("numbers divisible by");
+
+scanf("%d",&k);
+
+for(i=1;i<=n;i++)
+
+{
+
+if(i%k==0&&i%2==0)
+
+{
+
+printf(" %d ",i);
+
+es=es+i;
+
+}
+
+else if(i%k==0)
+
+{
+
+printf(" %d ",i);
+
+os=os+i;
+
+}
+
+else
+
+i++;
+
+}
+
+printf("\neven sum is %d",es);
+
+printf("\nodd sum is %d",os);
+
+return 0;
+
+}
